@@ -18,3 +18,4 @@ function the_ping_time($url = '', $port = 8080, $timeout = 180)
 
 
 echo(the_ping_time($website));
+?>
