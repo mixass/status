@@ -6,7 +6,7 @@ function the_ping_time($url = '', $port = 8080, $timeout = 180)
        $request_time = microtime(true);
        $socket = @fSockOpen($url, $port, $errno, $errstr, $timeout);
        if (!$socket) {
-          return ('<h1> down xd </h1>');
+          return ('<h1> Website is down or Request denied/blocked </h1>');
       } else {
            $response_time = microtime(true);
            return (round((($response_time - $request_time) * 1000), 0) . ' ms');
